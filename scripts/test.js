@@ -3,10 +3,9 @@ const path = require('path')
 
 esbuild.build({
     entryPoints: [
-        path.resolve(__dirname, '../src/index.ts')
+        path.resolve(__dirname, '../tests/index.ts')
     ],
     bundle: true,
     platform: 'node',
-    format: 'cjs',
-    outdir: path.resolve(__dirname, '../dist')
+    outdir: path.resolve(__dirname, '../out')
 })
